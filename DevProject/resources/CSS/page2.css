@@ -1,0 +1,53 @@
+/*this is the spacing and alignment of the title along with the background color*/
+
+body{
+	text-align:center;
+	background-color:#FFFAFA
+	
+}
+/*this is how you change background color of title*/
+
+h1 {
+	background-color:#b76e79;}
+
+/*this is the spacing ,margin distance blurred image affect ,and the word coloring on the images blurred effect*/
+
+.textWithBlurredBg{
+    width:400px;
+    height:400px;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:4px;
+  }
+  
+  .textWithBlurredBg img{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+  }
+  
+  .textWithBlurredBg:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+  }
+   
+  .textWithBlurredBg :not(img){
+    position:absolute;
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#b76e79;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textWithBlurredBg h3{
+    top:50%
+  }
+  
+  .textWithBlurredBg:hover :not(img){
+    opacity:1;
+  }
